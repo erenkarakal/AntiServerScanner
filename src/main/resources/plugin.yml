@@ -1,0 +1,14 @@
+name: AntiServerScanner
+version: '${version}'
+
+main: me.eren.antiserverscanner.AntiServerScanner
+api-version: '26.1.1'
+load: POSTWORLD
+
+depend:
+  - packetevents
+author: karakulak
+
+commands:
+  ipblocker:
+    permission: ipblocker.command

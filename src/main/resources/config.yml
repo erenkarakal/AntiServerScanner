@@ -1,0 +1,16 @@
+# A regex pattern matching all valid ways someone can connect to your server.
+# You should NOT keep this in its default value.
+#
+# For example, if your server's IPs are mc.domain.com and play.domain.com, you should set it to
+# (mc|play).domain.com
+valid-server-address-pattern: ".*"
+
+# What should the plugin do if it detects a server scanner?
+# BAN: Permanently ban them in Netty layer, so they can't even ping the server
+# BLOCK: Block the connection without banning the IP
+mode: BAN
+log-bans: true
+
+# List of blocked IPs, this can update as the plugin bans IPs
+blocked-ips:
+  - "1.2.3.4"
